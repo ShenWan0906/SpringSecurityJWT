@@ -7,10 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @auther macrozheng
@@ -18,9 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2018/8/3
  * @github https://github.com/macrozheng
  */
-@Controller
+
 @Api(tags = "UmsMemberController")
-@Tag(name = "UmsMemberController", description = "登录注册管理")
+@RestController
 @RequestMapping("/sso")
 public class UmsMemberController {
     @Autowired
